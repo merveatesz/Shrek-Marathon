@@ -3,13 +3,18 @@ function sitzKlicken(sitz) {
         return;
     }
 
-if (sitz.classList.contains('ausgewaehlt')) {
-    sitz.classList.remove('ausgewaehlt');
-    return;
+    if (sitz.classList.contains('ausgewaehlt')) {
+        sitz.classList.remove('ausgewaehlt');
+        sitz.setAttribute('aria-pressed', 'false');
+        return;
     }
-    let alleSitze = document.querySelectorAll('.sitz');
-    for(let i = 0; i < alleSitze.length; i++) {
-        alleSitze[i].classList.remove('ausgewaehlt');
+
+    const ausgewaehlteSitze = document.querySelectorAll('.sitzplatz.ausgewaehlt');
+    for (const ausgewaehlterSitz of ausgewaehlteSitze) {
+        ausgewaehlterSitz.classList.remove('ausgewaehlt');
+        ausgewaehlterSitz.setAttribute('aria-pressed', 'false');
     }
+
     sitz.classList.add('ausgewaehlt');
+    sitz.setAttribute('aria-pressed', 'true');
 }
