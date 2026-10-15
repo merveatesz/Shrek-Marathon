@@ -1,0 +1,39 @@
+.sitze {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sitzplatz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    background: #000000;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+
+.sitzplatz img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.sitzplatz:hover {
+    background: #e6e6e6;
+}
+
+.sitzplatz:focus-visible {
+    outline: 3px solid #1769aa;
+    outline-offset: 2px;
+}
+
+.sitzplatz.ausgewaehlt {
+    border-color: #1769aa;
+    background: #dceeff;
+}

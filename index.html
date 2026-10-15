@@ -3,10 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Shrek Sitzungsplätze</h1>
         <p>Bitte suche Dir einen Sitzplatz aus.</p>
         <p>Schwulian Maria Tatütata</p>
+        <label for="email">E-Mail-Adresse:</label>
+        <input type="email" placeholder="E-Mail-Adresse">
+        <button type="submit">Absenden</button>
+        <h2>Verfügbare Sitzplätze</h2>
+        <div class="sitze">
+            <button class="sitzplatz" type="button" onclick="sitzKlicken(this)" aria-pressed="false">
+                <img src="Plätze/shrek.jpg" alt="Platz 1: Shrek" width="300">
+                <span>Platz 1 Shrek</span>
+            </button>
+            <button class="sitzplatz" type="button" onclick="sitzKlicken(this)" aria-pressed="false">
+                <img src="Plätze/fiona.jpg" alt="Platz 2: Fiona" width="300">
+                <span>Platz 2 Fiona</span>
+            </button>
+            <button class="sitzplatz" type="button" onclick="sitzKlicken(this)" aria-pressed="false">
+                <img src="Plätze/kater1.jpg" alt="Platz 3: Kater" width="300">
+                <span>Platz 3 Kater</span>
+            </button>
+            <button class="sitzplatz" type="button" onclick="sitzKlicken(this)" aria-pressed="false">
+                <img src="Plätze/prince.jpg" alt="Platz 4: Prince" width="300">
+                <span>Platz 4 Prince</span>
+            </button>
+            <button class="sitzplatz" type="button" onclick="sitzKlicken(this)" aria-pressed="false">
+                <img src="Plätze/Esel.jpg" alt="Platz 5: Esel" width="300">
+                <span>Platz 5 Esel</span>
+            </button>
+        </div>
     </body>
 </html>
