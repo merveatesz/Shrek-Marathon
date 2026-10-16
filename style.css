@@ -33,13 +33,13 @@ body {
 }
 
 .sitzplatz:focus-visible {
-    outline: 1px solid #1769aa;
+    outline: 1px solid #003002;
     outline-offset: 1px;
 }
 
 .sitzplatz.ausgewaehlt {
-    border-color: #1769aa;
-    background: #dceeff;
+    border-color: #573400;
+    background: #355c34;
 }
 .sitzplatz-container {
     display: grid;
