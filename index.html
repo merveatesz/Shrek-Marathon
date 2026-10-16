@@ -5,14 +5,21 @@
         <meta name ="viewport" content="width=device-width, initial-scale=1.0">
         <script src="main.js" defer></script>
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "ewbtAub4qlaUco8jq",
+      });
+   })();
+</script>
     </head>
     <body>
-        <h1>Shrek Sitzungsplätze</h1>
-        <p>Bitte suche Dir einen Sitzplatz aus.</p>
-        <p>Schwulian Maria Tatütata</p>
+        <h1>Shrek Marathon Reservierung pro max diamond edition</h1>
+        <p>Bitte suche Dir einen Platz aus.</p>
+        <p>peenus</p>
         <label for="email">E-Mail-Adresse:</label>
-        <input type="email" placeholder="E-Mail-Adresse">
-        <button type="submit">Absenden</button>
+        <input type="email" id="email" placeholder="E-Mail-Adresse">
         <h2>Verfügbare Sitzplätze</h2>
         <div class="sitzplatz-container">
             <button class="sitzplatz sitzkissen1-sofaLinks" type="button" onclick="sitzKlicken(this)" aria-pressed="false">
@@ -36,8 +43,13 @@
                 <span>Platz 5 Sessel</span>
             </button>
         </div>
-        <button class="reservieren" type="button" onclick="reservieren()">
+        <button class="reservieren" id="reservier-btn" type="button" onclick="reservieren()">
+            <p>Reservierung abschicken:</p>
             <span>Reservieren</span>
         </button>
+        <div>
+            <img src="Plätze/shrek.png" alt="Shrek" width="100">
+            <p>Colcolcolcolcolien</p>
+        </div>
     </body>
 </html>
